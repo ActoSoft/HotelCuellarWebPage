@@ -1,0 +1,24 @@
+@import '../../partials/colors';
+
+.Header {
+  background-color: color(pink, base);
+}
+
+.top, .mid {
+  padding: 7px 10px;
+}
+
+.top {
+  color: $white;
+  background-color: color(gray, base);
+}
+
+.mid {
+  color: $white;
+  background-color: color(blue, base);
+}
+
+.bot {
+  color: $white;
+  background-color: color(orange, base);
+}

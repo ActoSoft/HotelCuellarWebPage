@@ -1,11 +1,64 @@
 /* Color Theme Swatches in Hex */
 $pink: #F23545;
+
 $blue: #049DD9;
+
 $yellow: #F2C029;
+
 $orange: #F26835;
-$light-gray: #F2F2F2;
+
+$gray: #F2F2F2;
+
 $white: #FFF;
 
-@function with-opacity($hex, $a) {
-  @return rgba($hex, $a);
+$palette: (
+  pink: (
+    base: $pink,
+    light: lighten($pink, 10%),
+    dark: darken($pink, 10%),
+  ),
+  blue: (
+    base: $blue,
+    light: lighten($blue, 10%),
+    dark: darken($blue, 10%),
+  ),
+  yellow: (
+    base: $yellow,
+    light: lighten($yellow, 10%),
+    dark: darken($yellow, 10%),
+  ),
+  orange: (
+    base: $orange,
+    light: lighten($orange, 10%),
+    dark: darken($orange, 10%),
+  ),
+  gray: (
+    base: darken($gray, 10%),
+    light: $gray,
+    dark: darken($gray, 30%)
+  ),
+  white: (
+    base: $white,
+  )
+);
+
+@function color($color, $tone, $alpha: 1){
+
+  @warn map-get($palette,$color);
+
+  @if map-has-key($palette,$color){
+    $color: map-get($palette,$color);
+
+      @if map-has-key($color,$tone){
+        $tone: map-get($color,$tone);
+        @return rgba($tone, $alpha);
+      }
+
+      @warn "unknown tone `#{$tone}` in color";
+      @return null;        
+  }
+
+  @warn "unknown color `#{$color}` in palette";
+  @return null;
+ 
 }

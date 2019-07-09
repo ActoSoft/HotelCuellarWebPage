@@ -1,0 +1,11 @@
+/* Color Theme Swatches in Hex */
+$pink: #F23545;
+$blue: #049DD9;
+$yellow: #F2C029;
+$orange: #F26835;
+$light-gray: #F2F2F2;
+$white: #FFF;
+
+@function with-opacity($hex, $a) {
+  @return rgba($hex, $a);
+}

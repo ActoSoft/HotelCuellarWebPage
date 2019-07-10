@@ -6,11 +6,13 @@ import './Header.scss';
 
 const Header = () => {
   return (
-    <header className="Header">
-      <Top />
-      <Mid />
+    <React.Fragment>
+      <header className="Header">
+        <Top />
+        <Mid />
+      </header>
       <Bot />
-    </header>
+    </React.Fragment>
   );
 };
 

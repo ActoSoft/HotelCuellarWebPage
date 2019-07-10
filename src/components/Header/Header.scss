@@ -1,9 +1,6 @@
 @import '../../partials/colors';
 @import '../../partials/spacing';
 
-.Header {
-}
-
 .top {
   padding: 0 space(12) + space(12) + space(12);
   background-color: color(white, base);
@@ -32,9 +29,13 @@
 
 .bot {
   border: 1px solid color(gray, base);
+  background-color: color(white, base);
   padding: 0 space(12) + space(12) + space(12);
   border-right: none;
   border-left: none;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
   box-shadow: 0px 0px 3px color(gray, base, .1),
               0px 1px 2px color(gray, base, .25);
 }

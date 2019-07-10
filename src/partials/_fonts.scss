@@ -1,7 +1,12 @@
-@mixin MontserratFont {
-  font-family: 'Montserrat', sans-serif;
-}
+$fonts: (
+  main: ('Montserrat', sans-serif),
+  serif: ('Merriweather', serif),
+);
 
-@mixin  MerriweatherFont {
-  font-family: 'Merriweather', serif;
+@function font($font) {
+  @if map-has-key($map: $fonts, $key: $font) {
+    @return map-get($map: $fonts, $key: $font);
+  }
+
+  @return map-get($map: $fonts, $key: main);
 }

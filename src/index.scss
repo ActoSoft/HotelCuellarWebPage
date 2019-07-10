@@ -4,6 +4,10 @@
 html, body {
   margin: 0;
   background-color: $white;
-  @include MontserratFont;
+  font-family: font(main);
+  color: color(gray, darkest);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}

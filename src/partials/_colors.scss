@@ -35,7 +35,9 @@ $palette: (
   gray: (
     base: darken($gray, 10%),
     light: $gray,
-    dark: darken($gray, 30%)
+    dark: darken($gray, 60%), 
+    darker: darken($gray, 70%),
+    darkest: darken($gray, 75%)
   ),
   white: (
     base: $white,
@@ -44,7 +46,7 @@ $palette: (
 
 @function color($color, $tone, $alpha: 1){
 
-  @warn map-get($palette,$color);
+  // @warn map-get($palette,$color);
 
   @if map-has-key($palette,$color){
     $color: map-get($palette,$color);

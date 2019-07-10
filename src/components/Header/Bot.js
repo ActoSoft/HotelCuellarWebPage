@@ -3,7 +3,7 @@ import React from 'react';
 const Bot = () => {
   return (
     <div className="bot">
-      bot
+      a
     </div>
   )
 };

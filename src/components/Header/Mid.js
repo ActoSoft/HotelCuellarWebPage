@@ -1,9 +1,12 @@
 import React from 'react';
+import Logo from '../../img/small-logo.png';
 
 const Mid = () => {
   return (
     <div className="mid">
-      Mid
+      <div className="img-container">
+        <img src={Logo} alt="logo" />
+      </div>
     </div>
   )
 };

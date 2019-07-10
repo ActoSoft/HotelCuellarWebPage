@@ -1,0 +1,23 @@
+$spacing: (
+  1: 3px,
+  2: 5px,
+  3: 8px,
+  4: 12px,
+  5: 16px,
+  6: 20px,
+  7: 24px,
+  8: 28px,
+  9: 32px,
+  10: 36px,
+  11: 40px,
+  12: 44px,
+);
+
+@function space($index) {
+  @if $index < 13 and $index > 0 {
+    @return map-get($map: $spacing, $key: $index);
+  }
+
+  @warn "unknown index `#{$index}` in $spacing";
+  @return map-get($map: $spacing, $key: 1);
+}

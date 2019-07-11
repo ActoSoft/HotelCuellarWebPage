@@ -53,6 +53,7 @@
     font-weight: 600;
     color: color(gray, darker);
     cursor: pointer;
+    text-decoration: none;
     &.with-separator::before {
       content: '';
       position: absolute;

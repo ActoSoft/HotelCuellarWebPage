@@ -11,6 +11,8 @@ $gray: #F2F2F2;
 
 $white: #FFF;
 
+$black: #000;
+
 $palette: (
   pink: (
     base: $pink,
@@ -38,6 +40,9 @@ $palette: (
     dark: darken($gray, 60%), 
     darker: darken($gray, 70%),
     darkest: darken($gray, 75%)
+  ),
+  black: (
+  base: $black
   ),
   white: (
     base: $white,

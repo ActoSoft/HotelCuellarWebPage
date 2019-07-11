@@ -6,7 +6,7 @@ import LazyLoad from 'react-lazy-load';
 const Home = () => {
   return(
     <section className="Home">
-      <Carousel>
+      <Carousel autoPlay>
         <div>
           <img src="https://scontent.fmex10-2.fna.fbcdn.net/v/t1.0-9/51424857_2319719334913940_3316925327699083264_o.jpg?_nc_cat=109&_nc_oc=AQnfWsakckNsOi_k_O47WM9mH6FBaQSwO8YB0v6gieGKNor6Eh-AQrgqKRlXGDZ6cvU&_nc_ht=scontent.fmex10-2.fna&oh=7fbe28104a70ca806f8385f8fbd0ebd4&oe=5DA4E0E2" />
         </div>

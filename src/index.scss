@@ -17,3 +17,20 @@ h1, h2, h3, h4, h5, h6 {
 main {
   min-height: 150vh;
 }
+
+.col-half {
+  max-width: 50%;
+  flex: 50%;
+}
+
+.col-full {
+  max-width: 100%;
+  flex: 100%;
+}
+
+@media (max-width: 600px) {
+  .col-half.col-xs-full {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

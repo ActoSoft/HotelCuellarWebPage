@@ -1,5 +1,6 @@
 @import '../../../partials/colors';
 @import '../../../partials/fonts';
+@import '../../../partials/spacing';
 
 .Button {
   cursor: pointer;
@@ -11,7 +12,15 @@
   transition: .4s;
   font-family: font(main);
   line-height: 1rem;
+  box-sizing: border-box;
   font-size: 1rem;
+  padding: space(4);
+  width: 100%;
+
+  &.menu-item {
+    padding: 0;
+  }
+  
   &:hover {
     background-color: color(gray, darker) !important;
   }

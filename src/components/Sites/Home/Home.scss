@@ -1,3 +1,14 @@
-.carousel {
-  height: 600px;
+@import '../../../partials/colors';
+@import '../../../partials/spacing';
+
+.slider {
+  position: relative;
+  
+  .carousel {
+    height: 600px;
+
+    .slide {
+      filter: brightness(.75);
+    }
+  }
 }

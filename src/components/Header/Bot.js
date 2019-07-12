@@ -3,7 +3,7 @@ import Search from '../Search';
 import Button from '../Common/Button/Button';
 import { Link } from 'react-router-dom';
 
-const Bot = () => {
+const Bot = ({bookFormVisible, setBookFormVisible}) => {
   return (
     <div className="bot">
       <Search className="nav" />
@@ -24,7 +24,7 @@ const Bot = () => {
           CONTACTANOS
         </Link>
       </div>
-      <Button className="menu-item">
+      <Button onClick={(e) => setBookFormVisible(!bookFormVisible)} className="menu-item">
         RESERVA AHORA
       </Button>
     </div>

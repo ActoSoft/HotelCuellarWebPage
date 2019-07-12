@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import LazyLoad from 'react-lazy-load';
 import './Home.scss';
+import { BookForm } from '../../Header';
 const Home = () => {
   
   return(
@@ -22,6 +23,7 @@ const Home = () => {
             <img src="https://scontent.fmex10-2.fna.fbcdn.net/v/t1.0-9/50990872_2314395405446333_7031994351370633216_o.jpg?_nc_cat=106&_nc_oc=AQlltPWlIavdVin8IrpQVdCzZ4zE3MWLhS7cyQFSbmEScFH0pIZtBEWWyBEwZOQPAiM&_nc_ht=scontent.fmex10-2.fna&oh=8c8bb7825362ef691e0ce23acaea3bb6&oe=5DB0447A" />
           </LazyLoad>
         </Carousel>
+        <BookForm />
       </article>
     </section>
   );

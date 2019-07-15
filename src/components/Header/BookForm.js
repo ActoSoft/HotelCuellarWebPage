@@ -6,12 +6,17 @@ import "react-datepicker/dist/react-datepicker.css";
 const BookForm = ({visible, setBookFormVisible}) => {
   return(
     <form>
+      <h3 className="col-full">Reserva Ahora</h3>
       <div className="input-control col-xs-full col-half">
         <label for="fechaEntrada">Fecha de Entrada</label>
-        <DatePicker required id="fechaEntrada" />
+        {/* <DatePicker required id="fechaEntrada" /> */}
       </div>
       <div className="input-control col-xs-full col-half">
         <label for="fechaSalida">Fecha de Salida</label>
+        {/* <DatePicker required id="fechaSalida" /> */}
+      </div>
+      <div className="input-control form-dates col-full">
+        <DatePicker required id="fechaEntrada" />
         <DatePicker required id="fechaSalida" />
       </div>
       <div className="input-control col-xs-full col-half">

@@ -118,61 +118,81 @@
   }
 
 }
-    form {
-      padding: space(8) space(12);
-      box-sizing: border-box;
-      background-color: color(gray, variant1);
-      box-shadow: 0px 2px 5px color(black, base, .2);
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 35%;
-      border-radius: space(3);
-  
-      .input-control {
-        box-sizing: border-box;
-        font-weight: 600;
-  
-  
-        button {
-          margin: space(2) 0;
-        }
-  
-        .react-datepicker-wrapper {
-          width: 50%;
-        }
-  
-        #fechaEntrada, #fechaSalida {
-          box-shadow: none;
-          border-radius: 0;
-        }
-      }
-  
-      .form-dates {
-        box-shadow: 0px 5px 10px color(black, base, .08);
-        padding: 0;
-        border-radius: space(2);
-        overflow: hidden;
-        .react-datepicker-wrapper:nth-child(2), .react-datepicker-wrapper:nth-child(3) {
-          position: relative;
-          &::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            width: 2px;
-            height: 1.8rem;
-            background: color(gray, dark, .15);
-            z-index: 1000;
-            -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-          }
-        }
-        
-        .react-datepicker-popper {
-          z-index: 1000;
-        }
-        
+form {
+  padding: space(8) space(12);
+  box-sizing: border-box;
+  background-color: color(gray, variant1);
+  box-shadow: 0px 2px 5px color(black, base, .2);
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 35%;
+  border-radius: space(3);
+
+  .input-control {
+    box-sizing: border-box;
+    font-weight: 600;
+
+
+    button {
+      margin: space(2) 0;
+    }
+
+    #adultos, #ninos {
+      width: 50%;
+    }
+
+    .react-datepicker-wrapper {
+      width: 50%;
+    }
+
+    #adultos, #ninos, #fechaEntrada, #fechaSalida {
+      box-shadow: none;
+      border-radius: 0;
+    }
+  }
+
+  .form-numbers {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 2px;
+      height: 1.8rem;
+      background: color(gray, dark, .15);
+      z-index: 1000;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+
+  .form-dates, .form-numbers {
+    box-shadow: 0px 5px 10px color(black, base, .08);
+    padding: 0;
+    border-radius: space(2);
+    overflow: hidden;
+    .react-datepicker-wrapper:nth-child(2), .react-datepicker-wrapper:nth-child(3) {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 2px;
+        height: 1.8rem;
+        background: color(gray, dark, .15);
+        z-index: 1000;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
       }
     }
+    
+    .react-datepicker-popper {
+      z-index: 1000;
+    }
+    
+  }
+}
 
 .slider {
   .form-container {

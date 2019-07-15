@@ -17,10 +17,10 @@ const BookForm = ({visible, setBookFormVisible}) => {
         <DatePicker required id="fechaEntrada" />
         <DatePicker required id="fechaSalida" />
       </div>
-      <div className="no-padding input-control col-xs-full col-half">
+      <div className="padding-top input-control col-xs-full col-half">
         <label for="adultos">Adultos</label>
       </div>
-      <div className="no-padding input-control col-xs-full col-half">
+      <div className="padding-top input-control col-xs-full col-half">
         <label for="ninos">Niños</label>
       </div>
       <div className="input-control form-numbers col-full">

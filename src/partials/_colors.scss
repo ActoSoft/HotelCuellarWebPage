@@ -39,7 +39,8 @@ $palette: (
     light: $gray,
     dark: darken($gray, 60%), 
     darker: darken($gray, 70%),
-    darkest: darken($gray, 75%)
+    darkest: darken($gray, 75%),
+    variant1: #E8ECEF,
   ),
   black: (
   base: $black

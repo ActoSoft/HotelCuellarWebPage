@@ -111,78 +111,114 @@
     visibility: visible;
   }
 
-  form {
-    padding: space(12);
+}
+form {
+  padding: space(8) space(12);
+  box-sizing: border-box;
+  background-color: color(gray, variant1);
+  box-shadow: 0px 2px 5px color(black, base, .2);
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 35%;
+  border-radius: space(3);
+
+  h3 {
+    padding-bottom: space(5);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .input-control {
     box-sizing: border-box;
-    background-color: color(white, base);
-    box-shadow: 0px 2px 5px color(black, base, .2);
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 50%;
+    font-weight: 600;
 
-    .input-control {
-      padding: space(2);
-      box-sizing: border-box;
-      font-weight: 600;
 
-      label {
-        display: block;
-        padding: space(1) 0;
-      }
+    button {
+      margin-top: space(6);
+    }
 
-      input, select, .react-datepicker-wrapper, .react-datepicker__input-container {
-        width: 100%;
-        box-sizing: border-box; 
-        font-family: font(main);
-        line-height: 1rem;
-      }
+    #adultos, #ninos {
+      width: 50%;
+    }
 
-      input, select {
-        border: 1px solid color(gray, dark, .6); 
-        padding: space(2);
-      }
+    .react-datepicker-wrapper {
+      width: 50%;
+    }
 
-      button {
-        margin: space(2) 0;
+    #adultos, #ninos, #fechaEntrada, #fechaSalida {
+      box-shadow: none;
+      border-radius: 0;
+    }
+  }
+
+  .form-numbers {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 2px;
+      height: 1.8rem;
+      background: color(gray, dark, .15);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+
+  .form-dates, .form-numbers {
+    box-shadow: 0px 5px 10px color(black, base, .08);
+    padding: 0;
+    border-radius: space(2);
+    overflow: hidden;
+    .react-datepicker-wrapper:nth-child(2), .react-datepicker-wrapper:nth-child(3) {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 2px;
+        height: 1.8rem;
+        background: color(gray, dark, .15);
+        z-index: 1000;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
       }
     }
+    
+    .react-datepicker-popper {
+      z-index: 1000;
+    }
+    
   }
 }
 
 .slider {
-  form {
-    padding: space(12);
+  .form-container {
+    display: flex;
     position: absolute;
-    top: 50px;
-    right: 50px;
-    background-color: color(black, base, .35);
+    top: 0;
+    right: 0;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding-right: 70px;
+  }
+
+  form {
+    padding: space(8) space(12);
+    background-color: color(black, base, .5);
     color: color(white, base);
     box-sizing: border-box;
     box-shadow: 0px 2px 5px color(black, base, .2);
     display: flex;
     flex-wrap: wrap;
-    max-width: 40%;
+    border-radius: space(3);
+    max-width: 35%;
 
     .input-control {
-      padding: space(2);
-      box-sizing: border-box;
-      font-weight: 600;
-
       label {
-        display: block;
-        padding: space(1) 0;
-      }
-
-      input, select, .react-datepicker-wrapper, .react-datepicker__input-container {
-        width: 100%;
-        box-sizing: border-box; 
-        font-family: font(main);
-        line-height: 1rem;
-      }
-
-      input, select {
-        border: 1px solid color(gray, dark, .6); 
-        padding: space(2);
+        color: color(white, base);
       }
 
       button {

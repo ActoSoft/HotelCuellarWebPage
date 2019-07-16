@@ -1,5 +1,6 @@
 @import './partials/colors';
 @import './partials/fonts';
+@import './partials/spacing';
 
 html, body {
   margin: 0;
@@ -33,4 +34,41 @@ main {
     flex: 100%;
     max-width: 100%;
   }
+}
+
+input, select, .react-datepicker-wrapper, .react-datepicker__input-container {
+  width: 100%;
+  box-sizing: border-box; 
+  font-family: font(main);
+  line-height: 1.2rem;
+}
+
+.input-control {
+  box-sizing: border-box;
+  font-weight: 600;
+  padding: space(3) 0;
+  
+  label {
+    display: block;
+    padding: space(2) space(4);
+    color: color(gray, dark, .7);
+  }
+
+  input, select {
+    border: none; 
+    padding: space(5) space(4);
+    border-radius: space(2);
+    box-shadow: 0px 5px 10px color(black, base, .08);
+    outline: none;
+    font-size: 1.2rem;
+  }
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.padding-top {
+  padding-top: space(5);
+  padding-bottom: 0;
 }

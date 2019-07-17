@@ -4,7 +4,41 @@ import { Carousel } from 'react-responsive-carousel';
 import LazyLoad from 'react-lazy-load';
 import './Home.scss';
 import { BookForm } from '../../Header';
+import { RoomCard } from '../../Common/Cards';
 const Home = () => {
+  const [rooms, setRooms] = useState([
+    {
+      title: 'Deluxe Room',
+      pricing: 640.00,
+      description: 'Lorem ipsum dolor amet selfies lyft small batch, nisi skateboard vexillologist trust fund leggings meditation hot chicken forage actually subway tile edison bulb. Ramps bespoke labore sriracha. Hella wayfarers locavore narwhal plaid veniam. Franzen copper mug actually, cray glossier excepteur affogato enamel pin.',
+      key: 1,
+      imgSrc: 'https://demo.accesspressthemes.com/swing/city-hotel/wp-content/uploads/sites/6/2018/01/po2-1360x800.jpg'
+    },
+    
+    {
+      title: 'Deluxe Room',
+      pricing: 640.00,
+      description: 'Lorem ipsum dolor amet selfies lyft small batch, nisi skateboard vexillologist trust fund leggings meditation hot chicken forage actually subway tile edison bulb. Ramps bespoke labore sriracha. Hella wayfarers locavore narwhal plaid veniam. Franzen copper mug actually, cray glossier excepteur affogato enamel pin.',
+      key: 1,
+      imgSrc: 'https://demo.accesspressthemes.com/swing/city-hotel/wp-content/uploads/sites/6/2018/01/po2-1360x800.jpg'
+    },
+    
+    {
+      title: 'Deluxe Room',
+      pricing: 640.00,
+      description: 'Lorem ipsum dolor amet selfies lyft small batch, nisi skateboard vexillologist trust fund leggings meditation hot chicken forage actually subway tile edison bulb. Ramps bespoke labore sriracha. Hella wayfarers locavore narwhal plaid veniam. Franzen copper mug actually, cray glossier excepteur affogato enamel pin.',
+      key: 1,
+      imgSrc: 'https://demo.accesspressthemes.com/swing/city-hotel/wp-content/uploads/sites/6/2018/01/po2-1360x800.jpg'
+    },
+    
+    {
+      title: 'Deluxe Room',
+      pricing: 640.00,
+      description: 'Lorem ipsum dolor amet selfies lyft small batch, nisi skateboard vexillologist trust fund leggings meditation hot chicken forage actually subway tile edison bulb. Ramps bespoke labore sriracha. Hella wayfarers locavore narwhal plaid veniam. Franzen copper mug actually, cray glossier excepteur affogato enamel pin.',
+      key: 1,
+      imgSrc: 'https://demo.accesspressthemes.com/swing/city-hotel/wp-content/uploads/sites/6/2018/01/po2-1360x800.jpg'
+    }
+  ]);
   
   return(
     <section className="Home">
@@ -27,6 +61,11 @@ const Home = () => {
           <BookForm />
         </div>
       </article>
+      <section>
+        {
+          rooms.map(room => <RoomCard {...room} />)
+        }
+      </section>
     </section>
   );
 };

@@ -5,6 +5,7 @@ import LazyLoad from 'react-lazy-load';
 import './Home.scss';
 import { BookForm } from '../../Header';
 import { RoomCard } from '../../Common/Cards';
+import Rooms from '../../Rooms';
 const Home = () => {
   const [rooms, setRooms] = useState([
     {
@@ -62,10 +63,7 @@ const Home = () => {
         </div>
       </article>
       <main>
-        {
-          // rooms.map(room => <RoomCard {...room} />)
-          <RoomCard {...rooms[0]} />
-        }
+        <Rooms rooms={rooms} />
       </main>
     </section>
   );

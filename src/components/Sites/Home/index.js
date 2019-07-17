@@ -61,11 +61,12 @@ const Home = () => {
           <BookForm />
         </div>
       </article>
-      <section>
+      <main>
         {
-          rooms.map(room => <RoomCard {...room} />)
+          // rooms.map(room => <RoomCard {...room} />)
+          <RoomCard {...rooms[0]} />
         }
-      </section>
+      </main>
     </section>
   );
 };

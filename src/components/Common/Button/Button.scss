@@ -4,6 +4,9 @@
 
 .Button {
   cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
   background-color: color(pink, base);
   border: 0;
   color: color(white, base) !important;

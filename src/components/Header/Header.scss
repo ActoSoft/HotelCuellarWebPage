@@ -7,7 +7,7 @@
 }
 
 .top {
-  padding: 0 space(12) + space(12) + space(12) + space(10);
+  padding: 0 space(12) + space(12) + space(12);
   background-color: color(white, base);
   h2 {
     border-bottom: 1px solid color(gray, base);
@@ -39,7 +39,7 @@
   z-index: 1000;
   height: 55px;
   background-color: color(white, base);
-  padding: 0 space(12) + space(12) + space(12) + space(10);
+  padding: 0 space(12) + space(12) + space(12);
   border-right: none;
   border-left: none;
   position: sticky;
@@ -204,7 +204,7 @@ form {
     align-items: center;
     justify-content: flex-end;
     height: 100%;
-    padding-right: space(12) + space(12) + space(12) + space(10);
+    padding-right: space(12) + space(12) + space(12);
   }
 
   form {

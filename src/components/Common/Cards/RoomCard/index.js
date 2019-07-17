@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../../Button';
 import { Link } from 'react-router-dom';
 import './RoomCard.scss';
+import { Typography } from '../..';
 
 const RoomCard = ({ title, pricing, description, key, imgSrc }) => {
   return(
@@ -15,9 +16,11 @@ const RoomCard = ({ title, pricing, description, key, imgSrc }) => {
         </div>
       </div>
       <div className="body">
-        <h4 className="title">{title}</h4>
+        <Typography variant="sub-title" component="h4" >{title}</Typography>
         <div className="description">
-          <p>{description.substring(0, 230)}...</p>
+          <Typography align="justified">
+            {description.substring(0, 230)}...
+          </Typography>
         </div>
       </div>
       <div className="buttons">

@@ -4,7 +4,6 @@ import { Carousel } from 'react-responsive-carousel';
 import LazyLoad from 'react-lazy-load';
 import './Home.scss';
 import { BookForm } from '../../Header';
-import { RoomCard } from '../../Common/Cards';
 import Rooms from '../../Rooms';
 const Home = () => {
   const [rooms, setRooms] = useState([

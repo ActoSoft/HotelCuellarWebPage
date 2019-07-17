@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../../Button';
+import { Link } from 'react-router-dom';
 
 const RoomCard = ({ title, pricing, description, key, imgSrc }) => {
   return(
@@ -12,7 +13,7 @@ const RoomCard = ({ title, pricing, description, key, imgSrc }) => {
         <h4 className="title">{title}</h4>
         <p className="description">{description}</p>
       </div>
-      <Button> Reservar </Button>
+      <Button component={Link} to="/book" > Reservar </Button>
     </article>
   )
 };

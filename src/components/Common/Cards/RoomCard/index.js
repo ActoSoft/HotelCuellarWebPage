@@ -3,12 +3,15 @@ import Button from '../../Button';
 import { Link } from 'react-router-dom';
 import './RoomCard.scss';
 import { Typography } from '../..';
+import LazyLoad from 'react-lazy-load';
 
 const RoomCard = ({ title, pricing, description, key, imgSrc }) => {
   return(
     <article className="RoomCard">
       <div className="header">
-        <img alt="room" src={imgSrc} />
+        <LazyLoad offsetVertical={400} >
+          <img alt="room" src={imgSrc} />
+        </LazyLoad>
         <div className="pricing-box"></div>
         <div className="pricing-container">
           <p className="pricing">${pricing}</p>

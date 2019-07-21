@@ -7,9 +7,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <main>
-        <Routes />
-      </main>
+      <Routes />
     </Router>
   );
 }

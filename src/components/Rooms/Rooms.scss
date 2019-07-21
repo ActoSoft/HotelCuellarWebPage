@@ -1,0 +1,14 @@
+@import '../../partials/spacing';
+
+.Rooms {
+  padding: space(7) 0;
+  display: grid;
+  justify-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: space(11);
+  grid-row-gap: space(11);
+}
+
+.rooms-header {
+  padding: space(12) space(12) + space(12) + space(12) + space(12);
+}

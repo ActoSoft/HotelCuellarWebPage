@@ -1,0 +1,43 @@
+@import '../../../partials/fonts';
+@import '../../../partials/spacing';
+
+.variant-title {
+  font-family: font(serif);
+  font-weight: bold;
+  font-size: 3rem;
+  padding: space(7) 0;
+}
+
+.variant-sub-title {
+  font-family: font(serif);
+  font-weight: 600;
+  font-size: 2rem;
+  padding: space(7) 0;
+}
+
+.variant-body {
+  font-family: font(main);
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.variant-body-bold {
+  font-family: font(main);
+  font-weight: 600;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-justified {
+  text-align: justify;
+}

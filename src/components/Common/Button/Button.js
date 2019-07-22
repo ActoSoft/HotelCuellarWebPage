@@ -1,7 +1,7 @@
 import React from 'react';
 import './Button.scss';
 
-const Button = ({className, type, onClick, children, component, ...props}) => {
+const Button = ({className, type, onClick, children, component, dark, ...props}) => {
   if(!component) {
     component = 'button';
   }
@@ -13,7 +13,15 @@ const Button = ({className, type, onClick, children, component, ...props}) => {
   }
 
   return(
-    <ButtonBase {...props} onClick={onClick} type={type ? type : 'button'} className={`Button ${className ? className : ''}`}>
+    <ButtonBase {...props} 
+      onClick={onClick} 
+      type={type ? type : 'button'} 
+      className={
+        `
+          Button ${className ? className : ''}
+          ${dark ? 'dark' : ''}
+        `
+      }>
       {
         children
       }

@@ -1,5 +1,17 @@
 import Button from './Button';
 import Typography from './Typography';
-import * as Cards from './Cards';
+import { RoomCard, ImageCard } from './Cards';
+import Grid from './Grid';
+import Section, { SectionHeader } from './Section';
+import Position from './Position';
 
-export { Button, Cards, Typography };
+export { 
+  Button, 
+  Typography, 
+  Grid, 
+  Section, 
+  SectionHeader,
+  ImageCard, 
+  RoomCard,
+  Position
+};

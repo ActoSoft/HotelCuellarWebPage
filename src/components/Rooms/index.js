@@ -1,9 +1,7 @@
 import React from 'react';
-import { RoomCard } from '../Common/Cards';
 import './Rooms.scss';
-import { Typography } from '../Common';
-import Section, { SectionHeader } from '../Common/Section';
-import Grid from '../Common/Grid';
+import { Typography, Button, Grid, Section, SectionHeader, RoomCard, Position } from '../Common';
+import { Link } from 'react-router-dom';
 
 const Rooms = ({ rooms }) => {
   return(
@@ -19,6 +17,9 @@ const Rooms = ({ rooms }) => {
       <Grid className="Rooms">
         { rooms.map(room => <RoomCard {...room} />) }
       </Grid>
+      <Position align="center">
+        <Button style={{width: '500px'}} component={Link} to="/all-rooms">Ver todos los cuartos.</Button>
+      </Position>
     </Section>
   );
 };

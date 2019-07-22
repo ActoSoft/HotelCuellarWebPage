@@ -5,6 +5,9 @@ import './Typography.scss';
 /**
  * "Typography" gives a handfull tool manage different types of typographise that can 
  * be used in the app.
+ * @param {Object} props
+ * @param {('body'|'body-bold'|'title'|'sub-title'|undefined)} props.variant
+ * @param {('left'|'center'|'right'|'justified'|undefined)} props.align
  */
 const Typography = ({variant, children, className, align, component, ...props}) => {
   if(!component) {

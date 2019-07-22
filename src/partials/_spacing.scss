@@ -11,13 +11,13 @@ $spacing: (
   10: 36px,
   11: 40px,
   12: 44px,
-  lg: 50px,
-  xl: 75px,
-  xxl: 100px,
+  13: 50px,
+  14: 75px,
+  15: 100px,
 );
 
 @function space($index) {
-  @if $index < 13 and $index > 0 {
+  @if $index < 16 and $index > 0 {
     @return map-get($map: $spacing, $key: $index);
   }
 

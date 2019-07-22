@@ -19,7 +19,7 @@ const RoomCard = ({ title, pricing, description, key, imgSrc }) => {
         </div>
       </div>
       <div className="body">
-        <Typography variant="sub-title" component="h4" >{title}</Typography>
+        <Typography className="card-title" variant="sub-title" component="h4" >{title}</Typography>
         <div className="description">
           <Typography align="justified">
             {description.substring(0, 230)}...

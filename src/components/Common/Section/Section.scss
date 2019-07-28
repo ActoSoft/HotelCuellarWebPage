@@ -1,0 +1,13 @@
+@import '../../../partials/spacing';
+@import '../../../partials/colors';
+
+.Section {
+  padding: space(13) space(12) + space(12) + space(12);;
+  border-bottom: 1px solid color(gray, base);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.SectionHeader {
+  padding: space(12) space(12) + space(12) + space(12) + space(12);
+}

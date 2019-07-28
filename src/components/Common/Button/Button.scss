@@ -33,6 +33,7 @@
 
   &.dark {
     background-color: color(gray, darker);
+    
     &:hover {
       background-color: color(pink, base);
     }

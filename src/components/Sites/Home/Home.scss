@@ -12,3 +12,202 @@
     }
   }
 }
+
+.CostumersWord {
+  .slider {
+    overflow: hidden;
+    position: relative;
+    height: 380px;
+  }
+}
+
+@keyframes next {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes prev {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes visibleLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes visibleRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.CostumersWord {
+  .slide {
+    position: absolute;
+    height: 380px;
+    width: 100%;
+    transition: .4s;
+    background: color(white, base);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+  
+    &.next {
+      animation-name: next;
+      animation-duration: .4s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      z-index: 2;
+    }
+  
+    &.visible-right {
+      animation-name: visibleRight;
+    }
+  
+    &.visible-left {
+      animation-name: visibleLeft;
+    }
+    
+    &.visible-right, &.visible-left {
+      animation-duration: .4s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      z-index: 100;
+    }
+  
+    &.prev {
+      animation-name: prev;
+      animation-duration: .4s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      z-index: 1;
+    }
+  
+    &.not-visible {
+      opacity: 0;
+      visibility: none;
+      z-index: -1;
+    }
+  }
+
+  .indicators {
+    display: flex;
+    justify-content: center;
+    z-index: 1000; 
+    position: relative;
+    
+    .circle {
+      background-color: color(pink, dark);
+      margin: 0 6px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      transition: .4s;
+
+      &.visible {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  position: relative;
+
+  .control-prev, .control-next {
+    position: absolute;
+    height: 100%;
+    width: 70px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    
+    .top, .bot {
+      box-shadow: none;
+      width: 50%;
+      height: 4px !important;
+      padding: 0;
+      background-color: color(gray, base);
+    }
+
+    .bot {
+      margin-top: 15px;
+    }
+  }
+
+  .control-prev {
+    left: 0;
+    padding-left: space(12);
+    .bot {
+      transform: rotate(35deg);
+    }
+    .top {
+      transform: rotate(-35deg);
+    }
+  }
+
+  .control-next {
+    right: 0;
+    padding-right: space(12);
+    .bot {
+      transform: rotate(-35deg);
+    }
+    .top {
+      transform: rotate(35deg);
+    }
+  }
+}
+
+.CostumerWord {
+  .image-container {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid color(gray, base);
+    margin-bottom: space(9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      display: block;
+      max-height: 100%;
+    }
+  }
+
+  .body {
+    .desc {
+      padding: 0 space(15) + space(10);
+    }
+
+    .name {
+      padding-top: space(9);
+      padding-bottom: space(4);
+      text-transform: uppercase;
+    }
+
+    .contact {
+      font-weight: 600;
+      color: color(pink, dark);
+      word-spacing: 1px;
+    }
+  }
+}

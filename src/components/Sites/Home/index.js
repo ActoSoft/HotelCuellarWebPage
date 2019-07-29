@@ -6,6 +6,8 @@ import './Home.scss';
 import { BookForm } from '../../Header';
 import Rooms from '../../Rooms';
 import Welcome from './Welcome';
+import CostumersWord from './CostumersWord';
+import CostumerWord from './CostumerWord';
 const Home = () => {
   const [rooms, setRooms] = useState([
     {
@@ -62,9 +64,32 @@ const Home = () => {
           <BookForm />
         </div>
       </article>
+
       <main>
         <Welcome />
         <Rooms rooms={rooms} />
+        <CostumersWord >
+          <CostumerWord 
+            imgSrc="https://demo.accesspressthemes.com/swing/city-hotel/wp-content/uploads/sites/6/2017/12/team-member-6-475x345-200x200.jpg"
+            desc="Duis metus sem, aliquet vitae mi eget, vehicula vehicula enim. In consectetur velit lectus, sit amet sollicitudin ipsum suscipit sed."
+            name="Potry Madonnas"
+            contact="Managing Director - AC Lens" >
+          </CostumerWord>
+          
+          <CostumerWord 
+            imgSrc="https://demo.accesspressthemes.com/swing/city-hotel/wp-content/uploads/sites/6/2017/12/team-member-7-475x345-200x200.jpg"
+            desc="In consectetur velit lectus, sit amet sollicitudin ipsum suscipit sed. Integer ut urna sit amet mi commodo aliquam quis in nisl."
+            name="John Welson"
+            contact="Superviser - Walmart" >
+          </CostumerWord>
+          
+          <CostumerWord 
+            imgSrc="https://demo.accesspressthemes.com/swing/city-hotel/wp-content/uploads/sites/6/2017/12/team-member-2-475x345-200x200.jpg"
+            desc="Duis metus sem, aliquet vitae mi eget, vehicula vehicula enim. In consectetur velit lectus, sit amet sollicitudin ipsum suscipit sed."
+            name="Kyara Hussain"
+            contact="CEO - ExxonMobil" >
+          </CostumerWord>
+        </CostumersWord>
       </main>
     </section>
   );

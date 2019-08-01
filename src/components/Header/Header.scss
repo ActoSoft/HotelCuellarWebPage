@@ -37,6 +37,13 @@
       align-items: center;
       justify-content: center;
       color: color(gray, dark, 1);
+      transition: all .4s ease-in-out;
+
+      &:hover {
+        background-color: color(pink, base);
+        border-color: color(pink, base);
+        color: color(white, base);
+      }
     }
   }
 }

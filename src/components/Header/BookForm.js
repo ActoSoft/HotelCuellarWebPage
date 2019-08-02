@@ -5,7 +5,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 const BookForm = ({visible, setBookFormVisible}) => {
   return(
-    <form>
+    <form className="form">
       <h3 className="col-full">Reserva Ahora</h3>
       <div className="no-padding input-control col-xs-full col-half">
         <label for="fechaEntrada">Fecha de Entrada</label>

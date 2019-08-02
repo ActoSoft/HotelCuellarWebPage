@@ -2,21 +2,29 @@ import React from 'react';
 import Section, { SectionHeader } from '../../Common/Section';
 import { ImageCard } from '../../Common/Cards';
 import { Typography, Position, Button } from '../../Common';
-import Grid from '../../Common/Grid';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 const Welcome = () => {
   return(
     <Section>
       <Grid>
-        <ImageCard 
-          title={'Alojamiento de lujo'}
-          imgSrc={'https://demo.accesspressthemes.com/swing/demo-four/wp-content/uploads/sites/6/2019/06/ac1.jpg'} />
-        <ImageCard 
-          title={'Rooftop swimming'}
-          imgSrc={'https://demo.accesspressthemes.com/swing/demo-four/wp-content/uploads/sites/6/2019/06/ac22.jpg'} />
-        <ImageCard 
-          title={'Fine wine and dine'}
-          imgSrc={'https://demo.accesspressthemes.com/swing/demo-four/wp-content/uploads/sites/6/2018/02/1-service3.jpg'} />
+        <Row>      
+          <Col xs={12} md={4}>
+            <ImageCard 
+              title={'Alojamiento de lujo'}
+              imgSrc={'https://demo.accesspressthemes.com/swing/demo-four/wp-content/uploads/sites/6/2019/06/ac1.jpg'} />
+          </Col>      
+          <Col xs={12} md={4}>
+            <ImageCard 
+              title={'Rooftop swimming'}
+              imgSrc={'https://demo.accesspressthemes.com/swing/demo-four/wp-content/uploads/sites/6/2019/06/ac22.jpg'} />
+          </Col>        
+          <Col xs={12} md={4}>
+            <ImageCard 
+              title={'Fine wine and dine'}
+              imgSrc={'https://demo.accesspressthemes.com/swing/demo-four/wp-content/uploads/sites/6/2018/02/1-service3.jpg'} />
+          </Col>  
+        </Row>
       </Grid>
       <SectionHeader>
         <Typography align="center" variant="title">

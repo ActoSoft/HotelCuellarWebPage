@@ -9,6 +9,7 @@ import Welcome from './Welcome';
 import CostumersWord from './CostumersWord';
 import CostumerWord from './CostumerWord';
 import { FaAngleDoubleUp } from 'react-icons/fa';
+import ContactUs from './ContactUs';
 const Home = () => {
   const [rooms, setRooms] = useState([
     {
@@ -91,6 +92,7 @@ const Home = () => {
             contact="CEO - ExxonMobil" >
           </CostumerWord>
         </CostumersWord>
+        <ContactUs />
         <FaAngleDoubleUp className="goTop" onClick={() => window.scrollTo(0, 0)} />
       </main>
     </section>

@@ -4,6 +4,7 @@
 .ImageCard {
   position: relative;
   overflow: hidden;
+  height: 280px;
 
   &:hover .body > .card-title {
     padding: space(8) + space(1);
@@ -24,8 +25,13 @@
   }
 
   .header {
+    height: 100%;
+    width: 100%;
+    display: flex;
     img {
       transition: .75s;
+      position: absolute;
+      height: 100%;
     }
   }
   

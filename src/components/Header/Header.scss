@@ -259,3 +259,52 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .Header {
+    width: 100%;
+  }
+  
+  .top {
+    margin: 0 space(5);
+  }
+
+  .bot {
+    padding: 0 space(5);
+    height: auto;
+    .menu-item {
+      padding: 3px;
+      &.with-separator::before {
+        all: unset;
+      }
+    }
+  }
+
+  .form {
+    max-width: 90%;
+    padding: 5px;
+  }
+
+  .slider {
+    .form-container {
+      padding-right: space(5);
+
+      .form {
+        max-width: 90%;
+        padding: 5px;
+      }
+    }
+  }
+
+  .show-on-xs {
+    display: initial;
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .show-on-xs {
+    display: none;
+    visibility: none;
+  }
+}

@@ -10,6 +10,8 @@ import CostumersWord from './CostumersWord';
 import CostumerWord from './CostumerWord';
 import { FaAngleDoubleUp } from 'react-icons/fa';
 import ContactUs from './ContactUs';
+import Gallery from './Gallery';
+
 const Home = () => {
   const [rooms, setRooms] = useState([
     {
@@ -92,6 +94,7 @@ const Home = () => {
             contact="CEO - ExxonMobil" >
           </CostumerWord>
         </CostumersWord>
+        <Gallery />
         <ContactUs />
         <FaAngleDoubleUp className="goTop" onClick={() => window.scrollTo(0, 0)} />
       </main>

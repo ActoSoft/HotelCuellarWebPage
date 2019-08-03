@@ -26,13 +26,10 @@ const Welcome = () => {
           </Col>  
         </Row>
       </Grid>
-      <SectionHeader>
-        <Typography align="center" variant="title">
-          Legendary style makes it one of the most prestigious Hotel.
-        </Typography>
-        <Typography align="center" variant="body">
-          Fantastic place and what makes it even better is that it is not part of some big international chain but locally owned and run. The rooms were great, if possible try to get a suite as it makes things easier with a young family, the hotel is in such a lovely position right on the beach, approximately 100 paces from sea to pool, a little longer via the bar for either a Piton beer or one of the fantastic cocktails!
-        </Typography>
+      <SectionHeader
+        title="Legendary style makes it one of the most prestigious Hotel."
+        extra="Fantastic place and what makes it even better is that it is not part of some big international chain but locally owned and run. The rooms were great, if possible try to get a suite as it makes things easier with a young family, the hotel is in such a lovely position right on the beach, approximately 100 paces from sea to pool, a little longer via the bar for either a Piton beer or one of the fantastic cocktails!">
+        
         <Position align="center">
           <Button style={{width: '250px', marginTop: '50px'}} dark> MÁS DE NOSOTROS </Button>
         </Position>

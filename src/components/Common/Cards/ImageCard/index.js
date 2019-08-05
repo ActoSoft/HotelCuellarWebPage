@@ -9,7 +9,7 @@ import './ImageCard.scss';
  */
 const ImageCard = ({className, title, imgSrc, ...props}) => {
   return(
-    <article className={`${className ? className : ''} ImageCard`}>
+    <article {...props} className={`${className ? className : ''} ImageCard`}>
       <div className="header">
         <LazyLoad offsetVertical={400} >
           <img alt="room" src={imgSrc} />

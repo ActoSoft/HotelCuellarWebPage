@@ -5,6 +5,7 @@
   position: relative;
   overflow: hidden;
   height: 280px;
+  margin-bottom: space(5);
 
   &:hover .body > .card-title {
     padding: space(8) + space(1);
@@ -24,16 +25,66 @@
     opacity: 1;
   }
 
+  &.closed {
+    
+    img {
+      transform: scale(1);
+    }
+  }
+
+  transition: .5s;
+  &.opened {
+    // transform: scale(1.5);
+    overflow: visible;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    
+    img {
+      position: relative;
+      margin: auto;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      max-width: 100%;
+    }
+
+    .header::before {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: color(gray, darkest, .5);
+    }
+
+    &:hover .header img {
+      transform: scale(1);
+    }
+
+    &:hover .body::before {
+      opacity: 0;
+    }
+  
+    &:hover .body::after {
+      opacity: 0;
+    }
+  }
+
   .header {
     height: 100%;
     width: 100%;
-    display: flex;
+    position: relative;
     
     img {
-      transition: .75s;
-      display: block;
       position: absolute;
       height: 100%;
+      transition: .75s;
     }
   }
   
@@ -92,3 +143,4 @@
     }
   }
 }
+

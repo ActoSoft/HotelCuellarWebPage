@@ -22,7 +22,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js \"src/**/*.{js,jsx}\"",
-    "deploy": "./node_modules/.bin/firebase deploy"
+    "deploy": "./node_modules/.bin/firebase deploy",
+    "firebase-use": "./node_modules/.bin/firebase use default"
   },
   "eslintConfig": {
     "extends": "react-app"

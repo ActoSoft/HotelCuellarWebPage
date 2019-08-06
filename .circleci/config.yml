@@ -67,8 +67,11 @@ jobs:
           name: React App Build
           command: npm run build
       - run:
+          name: "Firebase use default project"
+          command: npm run firebase-use
+      - run:
           name: Firebase Deploy
-          command: npm run deploy -- --token "$FIREBASE_TOKEN" -- --project staging
+          command: npm run deploy -- --token "$FIREBASE_TOKEN"
 
 workflows:
   version: 2

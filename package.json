@@ -23,7 +23,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js \"src/**/*.{js,jsx}\"",
     "deploy": "./node_modules/.bin/firebase deploy",
-    "firebase-use": "./node_modules/.bin/firebase use default"
+    "firebase-use": "./node_modules/.bin/firebase use default",
+    "firebase-apply": "./node_modules/.bin/firebase target:apply hosting hotelcuellar hotelcuellar"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -70,6 +70,9 @@ jobs:
           name: "Firebase use default project"
           command: npm run firebase-use
       - run:
+          name: "Firebase target apply hotel cuellar"
+          command: npm run firebase-apply
+      - run:
           name: Firebase Deploy
           command: npm run deploy -- --token "$FIREBASE_TOKEN"
 

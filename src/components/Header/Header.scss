@@ -37,6 +37,13 @@
       align-items: center;
       justify-content: center;
       color: color(gray, dark, 1);
+      transition: all .4s ease-in-out;
+
+      &:hover {
+        background-color: color(pink, base);
+        border-color: color(pink, base);
+        color: color(white, base);
+      }
     }
   }
 }
@@ -137,7 +144,7 @@
   }
 
 }
-form {
+.form {
   padding: space(8) space(12);
   box-sizing: border-box;
   background-color: color(gray, variant1);
@@ -230,7 +237,7 @@ form {
     padding-right: space(12) + space(12) + space(12);
   }
 
-  form {
+  .form {
     padding: space(8) space(12);
     background-color: color(black, base, .5);
     color: color(white, base);

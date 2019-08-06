@@ -81,4 +81,4 @@ workflows:
       - build_deploy:
           context: Stating-Server
           requires:
-            - testss
+            - tests

@@ -1,11 +1,5 @@
 {
-  "targets": {
-    "hostingstaging-4840a": {
-      "hosting": {
-        "hotelcuellar": [
-          "hotelcuellar"
-        ]
-      }
-    }
+  "projects": {
+    "default": "hostingstaging-4840a"
   }
 }

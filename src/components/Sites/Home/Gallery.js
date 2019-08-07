@@ -12,25 +12,6 @@ const Gallery = () => {
     "https://demo.accesspressthemes.com/swing/demo-four/wp-content/uploads/sites/6/2019/06/gall321.jpg",
     "https://demo.accesspressthemes.com/swing/demo-four/wp-content/uploads/sites/6/2019/06/gal45.jpg"
   ]);
-
-  const [classNames, setClassNames] = useState({});
-
-  useEffect(() => {
-    console.warn('use effect');
-    let cn = {};
-    images.forEach((img, i) => {
-      cn[i] = 'closed';
-    });
-    console.log(cn);
-    setClassNames(cn)
-  }, [images]);
-
-  const handleClick = index => {
-    setClassNames({
-      ...classNames,
-      [index]: classNames[index] === "opened" ? "closed" : "opened"
-    });
-  };
   
   return(
     <Section className="Gallery">
@@ -40,11 +21,9 @@ const Gallery = () => {
       <Grid>
         <Row>
           {
-            images.map((imgSrc, index) => 
+            images.map((imgSrc) => 
               <Col xs={12} md={4} >
                 <ImageCard
-                  className={`pointer ${classNames[index]}`}
-                  onClick={e => handleClick(index)}
                   imgSrc={imgSrc} />
               </Col>
             )

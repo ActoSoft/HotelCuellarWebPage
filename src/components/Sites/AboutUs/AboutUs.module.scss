@@ -1,0 +1,73 @@
+@import '../../../partials/colors';
+@import '../../../partials/spacing';
+
+.AboutUs {
+  .textCont {
+    .largeText {
+      p {
+        padding: 0;
+        color: color(gray, dark);
+      }
+    }
+  }
+
+  .images {
+    padding: space(14) 0;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .card {
+    .imgCont {
+      height: 245px;
+      img {
+        height: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .body {
+      padding-bottom: space(14);
+
+      .title {
+        padding: 0;
+        padding-top: space(6);
+        padding-bottom: space(1);
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: color(pink, base);
+      }
+
+      .subTitle {
+        padding-bottom: space(5);
+        color: color(gray, dark);
+      }
+
+      .text {
+        padding-bottom: space(6);
+      }
+
+      a {
+        max-width: 170px;
+      }
+    }
+  }
+
+  .Facility {
+    padding: space(7) space(1);
+    
+    .icon {
+      color: color(pink, base);
+      font-size: 3.5rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .name {
+      color: color(pink, base);
+      padding-bottom: space(5);
+      font-weight: 600;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import Home from './Home';
 import RoomDetail from './RoomDetail';
+import AboutUs from './AboutUs';
 
-export { Home, RoomDetail };
+export { Home, AboutUs, RoomDetail };

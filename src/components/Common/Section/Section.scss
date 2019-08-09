@@ -3,7 +3,14 @@
 
 @media only screen and (max-width: 768px) {
   .Section {
-    padding: space(13) space(5);
+    padding: space(13) space(1);
+  }
+
+  .SectionHeader {
+    h2 {
+      padding: 0;
+      text-align: center;
+    }
   }
 }
 

@@ -1,0 +1,114 @@
+@import '../../../partials/spacing';
+@import '../../../partials/colors';
+
+.carousel {
+  .thumbs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .thumb {
+      width: 200px;
+    }
+  }
+}
+
+.RoomDetail {
+  .desc1, .desc2 {
+    line-height: 1.55rem;
+  }
+}
+
+.RoomDetails {
+  margin-left: space(5);
+  margin-bottom: space(7);
+  
+  .price {
+    border: 1px solid color(gray, base);
+    background-color: color(gray, light);
+    padding: space(8) 0;
+
+    .variant-body {
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+      justify-content: center;
+    }
+    
+    .pricing {
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: color(pink, base);
+      padding: 0 space(4);
+    }
+
+    .desc {
+      color: color(pink, base);
+    }
+  }
+
+  .body {
+    border: 1px solid color(gray, base);
+    border-top: 0;
+    padding: space(7);
+    padding-bottom: space(7) - space(5);
+
+    h4 {
+      font-size: 1.5rem;
+      padding-bottom: space(7);
+      text-transform: uppercase;
+    }
+
+    .item {
+      display: grid;
+      border-bottom: 1px solid color(gray, base);
+      padding: space(5) 0;
+      grid-template-columns: 2fr 8fr 2fr;
+      position: relative;
+      align-items: center;
+      justify-items: start;
+
+      &:last-child {
+        border: none;
+      }
+
+      .icon {
+        color: color(pink, base);
+        font-size: 1.8rem;
+      }
+
+      .desc, .icon, .desc {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.form {
+  margin: 0 space(4);
+  margin-bottom: space(7);
+  padding: space(4);
+}
+
+.RoomFeatures {
+  padding-top: space(15);
+
+  .feature {
+    padding: space(8);
+    list-style: circle;
+    border-bottom: 1px solid color(gray, base);
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      left: 0;
+      background-color: color(pink, base);
+    }
+  }
+}

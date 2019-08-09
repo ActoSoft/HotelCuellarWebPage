@@ -16,6 +16,10 @@
   }
   
   .SectionHeader {
-    padding: space(8) 0;
+    padding: space(5) 0 space(8);
+
+    h2 {
+      padding: space(1);
+    }
   }
 }

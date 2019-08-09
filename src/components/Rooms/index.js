@@ -7,14 +7,10 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 const Rooms = ({ rooms }) => {
   return(
     <Section>
-      <SectionHeader>
-        <Typography component="h2" align="center" variant="title">
-          Alojamiento De Lujo
-        </Typography>
-        <Typography component="h3" align="center" variant="body">
-          Lorem ipsum dolor amet selfies lyft small batch, nisi skateboard vexillologist trust fund leggings meditation hot chicken forage actually subway tile edison bulb. Ramps bespoke labore sriracha. Hella wayfarers locavore narwhal plaid veniam. Franzen copper mug actually, cray glossier excepteur affogato enamel pin.
-        </Typography>
-      </SectionHeader>
+      <SectionHeader title="Alojamiento De Lujo"
+        extra="Lorem ipsum dolor amet selfies lyft small batch, nisi skateboard vexillologist trust fund leggings meditation hot chicken forage actually subway tile edison bulb. Ramps bespoke labore sriracha. Hella wayfarers locavore narwhal plaid veniam. Franzen copper mug actually, cray glossier excepteur affogato enamel pin."
+      />
+        
       <Grid fluid className="Rooms">
         <Row>
           { rooms.map(room => <Col xs={12} md={4}><RoomCard {...room} /></Col>) }

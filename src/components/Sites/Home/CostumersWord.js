@@ -71,13 +71,10 @@ const CostumersWord = ({children}) => {
   
   return(
     <Section className="CostumersWord">
-      <SectionHeader>
-        <Typography align="center" variant="title">
-          Costumers Word
-        </Typography>
-        <Typography align="center" variant="body">
-          Proin quis turpis semper, onsectetur velit lectus, sit amet sollicitudin ipsum suscipit sed. Integer ut urna sit
-        </Typography>
+      <SectionHeader
+        title="Costumers Word"
+        extra="Proin quis turpis semper, onsectetur velit lectus, sit amet sollicitudin ipsum suscipit sed. Integer ut urna sit" >
+        
       </SectionHeader>
       <div className="slider">
         { newChildren }

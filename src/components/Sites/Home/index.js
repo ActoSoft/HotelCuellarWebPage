@@ -69,7 +69,7 @@ const Home = () => {
         </div>
       </article>
 
-      <main>
+      <main className="main-content">
         <Welcome />
         <Rooms rooms={rooms} />
         <CostumersWord >
@@ -95,9 +95,9 @@ const Home = () => {
           </CostumerWord>
         </CostumersWord>
         <Gallery />
-        <ContactUs />
-        <FaAngleDoubleUp className="goTop" onClick={() => window.scrollTo(0, 0)} />
       </main>
+      <ContactUs />
+      <FaAngleDoubleUp className="goTop" onClick={() => window.scrollTo(0, 0)} />
     </section>
   );
 };

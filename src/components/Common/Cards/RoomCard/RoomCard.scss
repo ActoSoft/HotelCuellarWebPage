@@ -84,3 +84,21 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .Rooms {
+    padding: 0;
+  }
+  .RoomCard {
+    margin: 1vh 0;
+    .buttons {
+      grid-template-columns: 1fr;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .Button {
+        width: 80%;
+      }
+    }
+  }
+}

@@ -13,7 +13,7 @@
   grid-template-columns: 12fr 2fr;
   border-bottom: 1px solid color(gray, base);
   align-items: center;
-  
+
   h2 {
     padding: space(5) 0;
     color: color(gray, dark, .8);
@@ -273,7 +273,6 @@
   .Header {
     width: 100%;
   }
-  
   .top {
     margin: 0 space(5);
   }
@@ -281,7 +280,7 @@
   .bot {
     padding: 0 space(5);
     height: auto;
-
+    grid-template-columns: 1fr 1fr 10fr;
     .menu-items {
       flex-direction: column;
       transition: .4s;
@@ -309,7 +308,6 @@
           top: 0;
         }
       }
-      
       .menu-item {
         width: 100%;
         padding: 8px;
@@ -340,6 +338,10 @@
     display: initial;
     visibility: visible;
   }
+
+  .social-icons a {
+    padding: 0 10px;
+  }
 }
 
 @media only screen and (min-width: 769px) {
@@ -352,4 +354,6 @@
     visibility: hidden;
     display: none;
   }
+
+
 }

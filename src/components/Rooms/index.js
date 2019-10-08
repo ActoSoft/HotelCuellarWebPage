@@ -17,7 +17,7 @@ const Rooms = ({ rooms }) => {
         </Row>
       </Grid>
       <Position align="center">
-        <Button style={{width: '350px'}} component={Link} to="/all-rooms">Ver todos los cuartos.</Button>
+        <Button style={{width: '350px'}} className="dark" component={Link} to="/all-rooms">Ver todos los cuartos.</Button>
       </Position>
     </Section>
   );

@@ -6,6 +6,7 @@
   font-weight: bold;
   font-size: 3rem;
   padding: space(7) 0;
+  margin-bottom: 3vh;
 }
 
 .variant-sub-title {
@@ -56,4 +57,13 @@
 
 .align-justified {
   text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  .variant-title {
+    font-size: 2.5em;
+  }
+  .variant-body {
+    text-align: justify;
+  }
 }
